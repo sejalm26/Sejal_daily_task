@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Diwali ✨</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🪔 Happy Diwali 🪔</h1>
+    <p>May the lamps of Diwali brighten your life and Rangoli add more hues to your life. Have a Happy Diwali!</p>
+
+    <img style="width: 300px;"
+      src="https://www.finetoshine.com/wp-content/uploads/2020/11/Happy-Diwali-GIF-Download-2020.gif" 
+      alt="Diya glowing" 
+      class="diya"
+    > <br>
+
+    <button id="celebrateBtn">Celebrate Now</button>
+  </div>
+
+  <script>
+    const btn = document.getElementById("celebrateBtn");
+    const colors = ["purple", "red", "orange", "yellow", "crimson", "deeppink", "gold", "tomato"];
+
+    btn.addEventListener("click", () => {
+      const randomColor = colors[Math.floor(Math.random() * colors.length)];
+      document.body.style.backgroundColor = randomColor;
+    });
+  </script>
+</body>
+</html>
